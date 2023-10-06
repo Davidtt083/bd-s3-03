@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Page Transitions</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+</head>
+
+<body>
+  <div class="contep" id="lottie-container" style="width: 100vw; height: 100vh;">
+
+
+
+  </div>
+  <div class="bgcontenedor">
+    <div class="gris">
+
+      <div class="princ btn1" onclick="mostrarp(1,1)" id="btn1">
+        <img src="images\bandera.png" alt="" class="logblanco">
+        <p class="tituboton">Líderes empresariales</p>
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(2,2)" id="btn2">
+        <img src="images\servicios-en-linea.png" alt="" class="logblanco">
+        <p class="tituboton">Departamento de TI</p>
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(3,3)" id="btn3">
+        <img src="images\mano.png" alt="" class="logblanco">
+        <p class="tituboton">Departamento de recursos humanos</p>
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(4,4)" id="btn4">
+        <img src="images\finanzas.png" alt="" class="logblanco">
+        <p class="tituboton">Finanzas</p>
+      </div>
+
+
+
+    </div>
+    <div class="negro">
+
+      <div class="princ btn1" onclick="mostrarp(5,5)" id="btn5">
+        <p class="tituboton">Departamentos operativos y negocios</p><img src="images\cooperacion.png" alt=""
+          class="logblanco">
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(6,6)" id="btn6">
+        <p class="tituboton">Departamento de <i>marketing</i></p><img src="images\promocion.png" alt=""
+          class="logblanco">
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(7,7)" id="btn7">
+        <p class="tituboton">Desarrolladores y analistas</p><img src="images\analista.png" alt="" class="logblanco">
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(8,8)" id="btn8">
+        <p class="tituboton">Consultores externos</p><img src="images\consulta.png" alt="" class="logblanco">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="texto1 hide align-items-center" id="text1">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Líderes empresariales</h1>
+      <p class="parr">Deben ser el motor de la transformación digital y establecer la visión y los objetivos a largo
+        plazo.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text2">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Departamento de TI</h1>
+      <p class="parr">Juega un papel clave en la implementación de la infraestructura digital necesaria para la
+        transformación digital. Deben trabajar con otros departamentos para identificar las soluciones tecnológicas
+        adecuadas y asegurarse de que se integren de manera efectiva.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text3">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Departamento de recursos humanos</h1>
+      <p class="parr">Debe asegurar de que el personal tenga las habilidades y conocimientos necesarios para participar
+        en la transformación digital.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text4">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Finanzas</h1>
+      <p class="parr">Debe asegurarse de que los proyectos de transformación digital se financien adecuadamente y se
+        ajusten a los presupuestos aprobados.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text5">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Departamentos operativos y negocios</h1>
+      <p class="parr">Deben identificar las oportunidades de transformación digital y trabajar con el departamento de TI
+        para implementar soluciones.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text6">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Departamento de <i>marketing</i></h1>
+      <p class="parr">Debe ayudar a comunicar los avances y resultados de la transformación digital a los clientes,
+        empleados y otros <i>stakeholders</i>.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text7">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Desarrolladores y analistas</h1>
+      <p class="parr">Son esenciales para la implementación y el mantenimiento de la infraestructura digital. Deben
+        asegurarse de que la solución sea escalable, segura y de alta disponibilidad.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text8">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">Consultores externos</h1>
+      <p class="parr">Si es necesario, los consultores externos pueden proporcionar asesoramiento y soluciones
+        adicionales para asegurar el éxito de la transformación digital.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text9">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">9</h1>
+      <p class="parr">La tecnología y los comportamientos digitales están en constante evolución, por lo que es
+        importante mantener un enfoque de innovación continua en tu estrategia digital.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text10">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h1 style="color:#d18a29">10</h1>
+      <p class="parr">Asegúrate de tener un equipo altamente capacitado en tecnología y estrategia digital para
+        aprovechar al máximo tus esfuerzos.
+      </p>
+    </div>
+  </div>
+
+
+  <!-------------scripts------------------>
+
+  <script>
+    // Esperar a que el documento se cargue
+    document.addEventListener('DOMContentLoaded', function () {
+      // Obtener el contenedor
+      var container = document.getElementById('lottie-container');
+
+      // Configurar las opciones de la animación Lottie
+      var animationOptions = {
+        container: container,
+        renderer: 'svg', // Puedes elegir 'canvas' o 'svg' según tus preferencias
+        loop: true, // Define si la animación se reproduce en bucle
+        autoplay: true, // Iniciar la animación automáticamente
+        path: 'fondo.json' // Ruta al archivo Lottie descargado
+      };
+
+      // Crear la instancia de la animación Lottie
+      var animfondo = lottie.loadAnimation(animationOptions);
+    });
+  </script>
+
+  <script>
+    var animationOptions1 = {
+      container: document.getElementById('lot1'),
+      path: 'pant1.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+    };
+
+    var anim1 = bodymovin.loadAnimation(animationOptions1);
+
+    var playButton = document.getElementById('btn1');
+
+    playButton.addEventListener('click', function () {
+      anim1.goToAndPlay(0, true);
+    });
+  </script>
+
+  <script>
+    var animationOptions2 = {
+      container: document.getElementById('lot2'),
+      path: 'pant2.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+    };
+
+    var anim2 = bodymovin.loadAnimation(animationOptions2);
+
+    var playButton = document.getElementById('btn2');
+
+    playButton.addEventListener('click', function () {
+      anim2.goToAndPlay(0, true);
+    });
+  </script>
+
+  <script>
+    var animationOptions3 = {
+      container: document.getElementById('lot3'),
+      path: 'pant3.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+    };
+
+    var anim3 = bodymovin.loadAnimation(animationOptions3);
+
+    var playButton = document.getElementById('btn3');
+
+    playButton.addEventListener('click', function () {
+      anim3.goToAndPlay(0, true);
+    });
+  </script>
+
+  <script>
+    var animationOptions = {
+      container: document.getElementById('lot4'),
+      path: 'pant3.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+    };
+
+    // Cargar la animación
+    var animsol2 = bodymovin.loadAnimation(animationOptions);
+  </script>
+
+  <script>
+    var animationOptions = {
+      container: document.getElementById('lot5'),
+      path: 'pant6.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+    };
+
+    // Cargar la animación
+    var animsol2 = bodymovin.loadAnimation(animationOptions);
+  </script>
+
+
+  <script>
+    var animationOptions = {
+      container: document.getElementById('lot6'),
+      path: 'pantlern.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+    };
+
+    // Cargar la animación
+    var animsol2 = bodymovin.loadAnimation(animationOptions);
+  </script>
+
+  <script>
+    var animationOptions = {
+      container: document.getElementById('lot7'),
+      path: 'pant7.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+    };
+
+    // Cargar la animación
+    var animsol2 = bodymovin.loadAnimation(animationOptions);
+  </script>
+
+
+
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
